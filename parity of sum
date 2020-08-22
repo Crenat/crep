@@ -1,12 +1,12 @@
 function isParity(string) {
-  let characters = string.split("");
+  let characters = string.split("");  //symbolically decompose
   let isParityFlag = false;
   var sum = 0;
 
   console.log("Start sum is: " + sum); //Debug output
 
   for (var i = 0; i < characters[i]; i++) {
-    const element = eval(characters[i]); //symbolically decompose
+    const element = eval(characters[i]);
     sum = sum + element; //count sum
     console.log("Sum is: " + sum); //Debuging sum
   }
