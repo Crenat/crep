@@ -1,0 +1,24 @@
+function isParity(string) {
+  let characters = string.split("");
+  let isParityFlag = false;
+  var sum = 0;
+
+  console.log("Start sum is: " + sum); //Debug output
+
+  for (var i = 0; i < characters[i]; i++) {
+    const element = eval(characters[i]); //symbolically decompose
+    sum = sum + element; //count sum
+    console.log("Sum is: " + sum); //Debuging sum
+  }
+
+  if (sum % 2 == 0) {
+    //check parity
+    console.log("Sum of nums is parity");
+    isParityFlag = true;
+  } else {
+    console.log("Sum of nums is not parity");
+    isParityFlag = false;
+  }
+}
+
+isParity("12");
